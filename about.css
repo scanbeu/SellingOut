@@ -1,0 +1,258 @@
+
+/* setting default styles and setting font family */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+header{
+    padding: 5px;
+}
+
+/* Body background image */
+body {
+   background-color:#c2c2c2;
+   display: block;
+}
+
+/* Header */
+header {
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80px;
+}
+
+/*navigation bar */
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #505050;
+    box-shadow: 0 0 22px #202020;
+    z-index: 999;
+    padding: 7px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    flex-direction: row;
+    transition: .6s;
+}
+
+nav hero {
+    font-size: 4vw;
+    display: flex;
+    justify-content: flex-start;
+}
+nav h1 {
+    margin-left: 20px;
+    text-align: left;
+}
+
+nav p {
+    font-size: small;
+    margin-left: 20px;
+}
+
+nav img {  
+    height: 80px; 
+    width: 10%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    mix-blend-mode: color-dodge;
+    transition: .6s;
+}
+
+nav.sticky {
+    background: #202020;
+    height: 80px;
+    transition: .6s;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-left: -4em;
+}
+.contactUs{
+    font-size: 3.5vw;
+}
+
+nav a {
+    position: relative;
+    /* left: -3px; */
+    font-size:1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 40px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height:3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+/* main */
+main{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #333;
+    font-size: 20px;
+    padding: 1px 1px 1px 1px;
+    margin: 10px;
+    margin-left: 20px;
+    transition: .6s;
+}
+.polaroid2{
+    display: flex;
+    flex-direction: row;
+}
+.polaroid2 img{
+    height: 20em;
+    width: 17em;
+}
+.polaroid2 p{
+    max-width: 55%;
+    text-align: end;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    margin-top: 80px;
+    margin-left: 20px
+}
+
+main h2 {
+    font-family:'Poppins', sans-serif ;
+    display: inline;
+}
+
+main p {
+    margin-bottom: 20px;
+}
+
+
+
+/* footer */
+footer{
+	margin-top: 15px;
+    border-top: 1px solid #202020;
+}
+
+.foot-panel2{
+	background-color: #fafaf2;
+	color: #1a1a1a;
+	height: 200px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items:center;
+	padding: 20px;
+}
+
+/* map */
+.map {
+    border:  2px solid #ced3ca;
+    padding: 2px;
+}
+
+.map iframe{
+    width:100% ;
+    height: 100%;
+}
+
+footer ul{
+	margin-top: 10px;
+}
+
+footer ul a{
+	display: block;
+	font-size: 0.85rem;
+	margin-top: 10px;
+	color: #1a1a1a;
+    text-decoration: none;
+}
+
+#foot-logo{
+	height: 9em;
+	width: 8em;
+	background-image: url(Favicon.png);
+	background-size: cover;
+}
+
+.foot-box3{
+	display: flex;
+	flex-direction: column;
+}
+
+.Social{
+	display: flex;
+    justify-content: space-evenly;
+}
+
+.logosecond{
+	background-image: url("Darbys-black.png");
+	background-size: cover;
+}
+
+.foot-panel4{
+	background-color: #9b9b9b;
+	color: white;
+	height: 80px;
+	font-size: 0.7rem;
+	text-align: center;
+}
+
+.pages{
+	padding-top: 10px;
+}
+
+.copyright{
+	padding-top: 5px ;
+}
+
+.pop-element {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .pop-element:hover {
+    transform: scale(1.1);
+  }
+  
